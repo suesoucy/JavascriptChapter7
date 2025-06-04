@@ -1,1 +1,17 @@
+Stylometry is the statistical analysis of the variation in literary style between one author and another. By examining the types of words authors use and their frequency, statisticians can attribute authorship to disputed texts. In this project you will work with JavaScript app that compares two authors based on the frequencies of words of different lengths. A preview of the completed page is shown in Figure 7-53, comparing the word length frequency of Ernest Hemingway and H.P. Lovercraft based on excerpts from the two of their short stories.  This app has already been written for you, but there are several errors scattered throughout the program that need to be fixed. Study the code and fix the app. 
+1. Use your code editor to open the project07-05_txt.html and project07-05_txt.js files from the js07project05 folder. Enter your name and the date in the comment section of each file and save them as project07-05.html and project07-05.js . 
+2. Go to the project07-05.html file in your code editor and in the head section add a script element to lord the project07-05.js file, deferring it until the entire page is loaded. Take some time to study the contents of the file to become familiar with its structure. Save your changes to the file. 
+3. Return to the project07-05.js file in your code editor. Comments have been added to help you interpret the code in the file. 
+4. The code starts with two anonymous function that run in response to button 1 and button 2 being clicked. There is an error in both anonymous functions. Locate and fix the errors. 
+5. The main part of the program is done in the generateWordFreq() function. There are several errors in this function that needed to be fixed. 
+    - The code initially reads the content of the inputFile document but there are two syntax errors that need to be fixed before the files can be read
+    - In the command that stores the text of the output document in the sourceText variable there is a logical error that will cause the word lengths to appear longer then they should be. Fix the error in the command that causes the app to include extraneous characters in the source text.
+    - There is a syntax error in the command that creates the regular expression literal alphaRegx, locate and fix the error.
+    - The words array will be created by splitting the source text at every occurrence of one or more whitespace characters, but there is a mistake in the regular expression. Fix the error. 
+    - A for loop iterates through every item in the words array. There is an error in the statement of the for loop. Locate and fix the error. 
+    - At the end of a function, another for loop write the contents of the freqs array to the web page. There is a logic error in the calculation of the frequency percentage. Fix the logical error so that the app displays the correct percentage values for each word length. 
+6. Save your changes to the file and then open project07-05.html in your web browser. Verify the following: 
+    - Verify that you can load both the hemmingway1.html and lovecraft1.html documents into the web page and their contents appear in the scrolling windows below the Choose File button.
+    - Verify that the app automatically calculates the frequency of each word length for the two author samples. Check that your percentages match that shown in Figure 7-53. 
+    - If the program fails to run correctly, use the debugging console to help you locate and fix the errors in the code.
 
